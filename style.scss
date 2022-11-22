@@ -1,0 +1,93 @@
+@media  screen and (max-width: 480px) {
+    body, HTML{
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        main{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            background-image: url(./images/photos/image-header.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 75vh;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            .info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 4%;
+                ul{
+                    display: none;
+     
+                }
+                p{
+                    font-weight: bolder;
+                    
+                }
+            }
+            h1{
+                text-align: center;
+            
+                }
+            #menu{
+                width: 6vw;
+                height: 4vh;
+            }
+            #fleche{
+                width: 9vw;
+                height: 20vh;
+                display: flex;
+                justify-content: center;
+                margin-left: 45vw;
+                margin-top: 5vh;
+            }
+        }
+            img{
+                width: 100%;
+                height: 312px;
+                top: 32px;
+                left: 24px;
+            }
+        /*.transform{
+            background-image: url(./images/photos/image-transform.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+        }
+        .stand{
+            background-image: url(./images/photos/image-stand-out.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+        }
+        .graphic{
+            background-image: url(./images/photos/image-graphic-design.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+
+        }
+        .photo{
+            background-image: url(./images/photos/image-gallery-orange.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 50vh;
+            p{
+                margin-top: 100px;
+            }
+        }*/
+    }
+}

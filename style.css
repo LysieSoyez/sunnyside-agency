@@ -1,0 +1,90 @@
+@media screen and (max-width: 480px) {
+  body, HTML {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    /*.transform{
+        background-image: url(./images/photos/image-transform.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+    .stand{
+        background-image: url(./images/photos/image-stand-out.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+    .graphic{
+        background-image: url(./images/photos/image-graphic-design.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+
+    }
+    .photo{
+        background-image: url(./images/photos/image-gallery-orange.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        p{
+            margin-top: 100px;
+        }
+    }*/
+  }
+  body main, HTML main {
+    width: 100%;
+    height: 100%;
+  }
+  body .container, HTML .container {
+    display: flex;
+    flex-direction: column;
+  }
+  body header, HTML header {
+    background-image: url(./images/photos/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+  }
+  body header .info, HTML header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4%;
+  }
+  body header .info ul, HTML header .info ul {
+    display: none;
+  }
+  body header .info p, HTML header .info p {
+    font-weight: bolder;
+  }
+  body header h1, HTML header h1 {
+    text-align: center;
+  }
+  body header #menu, HTML header #menu {
+    width: 6vw;
+    height: 4vh;
+  }
+  body header #fleche, HTML header #fleche {
+    width: 9vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 45vw;
+    margin-top: 5vh;
+  }
+  body img, HTML img {
+    width: 100%;
+    height: 312px;
+    top: 32px;
+    left: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */
