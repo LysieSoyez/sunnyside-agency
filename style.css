@@ -17,12 +17,7 @@
         background-size: cover;
         height: 50vh;
     }
-    .graphic{
-        background-image: url(./images/photos/image-graphic-design.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
+
 
     }
     .photo{
@@ -39,10 +34,6 @@
   body main, HTML main {
     width: 100%;
     height: 100%;
-  }
-  body .container, HTML .container {
-    display: flex;
-    flex-direction: column;
   }
   body header, HTML header {
     background-image: url(./images/photos/image-header.jpg);
@@ -68,6 +59,7 @@
   }
   body header h1, HTML header h1 {
     text-align: center;
+    font-family: "fraunce", serif;
   }
   body header #menu, HTML header #menu {
     width: 6vw;
@@ -81,10 +73,25 @@
     margin-left: 45vw;
     margin-top: 5vh;
   }
+  body .container, HTML .container {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container h2, HTML .container h2 {
+    font-family: "barlow", sans-serif;
+    font-weight: 600px;
+  }
   body img, HTML img {
     width: 100%;
     height: 312px;
     top: 32px;
     left: 24px;
+  }
+  body .graphic, HTML .graphic {
+    background-image: url(./images/photos/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
   }
 }/*# sourceMappingURL=style.css.map */
