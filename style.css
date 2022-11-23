@@ -128,6 +128,11 @@ body .container .oeuf .oeufTxt, HTML .container .oeuf .oeufTxt {
   width: 100%;
   height: 100%;
 }
+@media screen and (min-width: 1024px) {
+  body .container .oeuf .oeufTxt h2, body .container .oeuf .oeufTxt p, body .container .oeuf .oeufTxt a, HTML .container .oeuf .oeufTxt h2, HTML .container .oeuf .oeufTxt p, HTML .container .oeuf .oeufTxt a {
+    text-align: left;
+  }
+}
 body .container .oeuf .oeufTxt .jaune a::after, HTML .container .oeuf .oeufTxt .jaune a::after {
   display: block;
   content: "";
@@ -159,6 +164,11 @@ body .container .verre, HTML .container .verre {
 body .container .verre .verreTxt, HTML .container .verre .verreTxt {
   width: 100%;
   height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  body .container .verre .verreTxt h2, body .container .verre .verreTxt p, body .container .verre .verreTxt a, HTML .container .verre .verreTxt h2, HTML .container .verre .verreTxt p, HTML .container .verre .verreTxt a {
+    text-align: left;
+  }
 }
 body .container .verre .verreTxt .rose a::after, HTML .container .verre .verreTxt .rose a::after {
   display: block;
@@ -199,6 +209,12 @@ body .orangeCerise .graphic, HTML .orangeCerise .graphic {
 body .orangeCerise .graphic h2, body .orangeCerise .graphic p, HTML .orangeCerise .graphic h2, HTML .orangeCerise .graphic p {
   color: #24554A;
 }
+@media screen and (min-width: 1024px) {
+  body .orangeCerise .graphic h2, body .orangeCerise .graphic p, HTML .orangeCerise .graphic h2, HTML .orangeCerise .graphic p {
+    margin-top: -3.125rem;
+    margin-bottom: 3.125rem;
+  }
+}
 body .orangeCerise .photo, HTML .orangeCerise .photo {
   background-image: url(./images/photos/image-photography.jpg);
   background-repeat: no-repeat;
@@ -217,6 +233,30 @@ body .orangeCerise .photo, HTML .orangeCerise .photo {
 body .orangeCerise .photo h2, body .orangeCerise .photo p, HTML .orangeCerise .photo h2, HTML .orangeCerise .photo p {
   color: #052C3B;
 }
+@media screen and (min-width: 1024px) {
+  body .orangeCerise .photo h2, body .orangeCerise .photo p, HTML .orangeCerise .photo h2, HTML .orangeCerise .photo p {
+    margin-top: -3.125rem;
+    margin-bottom: 3.125rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .client .personnes, HTML .client .personnes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  body .client .personnes .emily, HTML .client .personnes .emily {
+    grid-area: 1/1/2/2;
+  }
+  body .client .personnes .thomas, HTML .client .personnes .thomas {
+    grid-area: 1/2/2/3;
+  }
+  body .client .personnes .jennie, HTML .client .personnes .jennie {
+    grid-area: 1/3/2/4;
+  }
+}
 body .client h2, HTML .client h2 {
   color: #A7AAAD;
   font-family: Fraunces 9pt Soft;
@@ -225,6 +265,11 @@ body .client h2, HTML .client h2 {
   line-height: 1.25rem;
   letter-spacing: 0.25rem;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  body .client h2, HTML .client h2 {
+    font-size: xx-large;
+  }
 }
 body .client p, HTML .client p {
   font-size: 0.875rem;
@@ -251,7 +296,7 @@ body .client .nom p, HTML .client .nom p {
 body .client img, HTML .client img {
   border-radius: 50%;
 }
-body .client .emily, body .client .thomas, body .client .jennie, HTML .client .emily, HTML .client .thomas, HTML .client .jennie {
+body .client #emily, body .client #thomas, body .client #jennie, HTML .client #emily, HTML .client #thomas, HTML .client #jennie {
   width: 4.5rem;
   height: 4.5rem;
   display: flex;
@@ -264,6 +309,13 @@ body .images, HTML .images {
   flex-wrap: wrap;
   margin-bottom: 0;
 }
+@media screen and (min-width: 1024px) {
+  body .images, HTML .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
 body .images .lait, body .images .orange2, body .images .cone, body .images .sucre, HTML .images .lait, HTML .images .orange2, HTML .images .cone, HTML .images .sucre {
   width: 50%;
   height: 50%;
@@ -271,7 +323,7 @@ body .images .lait, body .images .orange2, body .images .cone, body .images .suc
 }
 body .about, HTML .about {
   background-color: #90D4C6;
-  padding-bottom: 5px;
+  padding-bottom: 10vw;
 }
 body .about .logo, HTML .about .logo {
   display: flex;
@@ -279,15 +331,26 @@ body .about .logo, HTML .about .logo {
   align-items: center;
 }
 body .about .logo img, HTML .about .logo img {
-  height: 2.0625rem;
-  width: 10.625rem;
-  padding: 10%;
+  height: 8vw;
+  width: 30vw;
+  padding: 5vw;
 }
 body .about ul, HTML .about ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   margin: 10%;
+}
+@media screen and (min-width: 1024px) {
+  body .about ul, HTML .about ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -12vw;
+  }
+  body .about ul li, HTML .about ul li {
+    margin-right: 5vw;
+    margin-top: -15vw;
+  }
 }
 body .about ul li, HTML .about ul li {
   font-family: Barlow;
@@ -299,7 +362,17 @@ body .about ul li, HTML .about ul li {
 body .about .icons, HTML .about .icons {
   display: flex;
   justify-content: space-around;
-  margin: 10%;
+  margin: 2vw;
+  padding: 2vw;
+}
+@media screen and (min-width: 1024px) {
+  body .about .icons, HTML .about .icons {
+    display: flex;
+    justify-content: center;
+  }
+  body .about .icons img, HTML .about .icons img {
+    margin-right: 5vw;
+  }
 }
 body .about .icons div img, HTML .about .icons div img {
   width: 5vw;
