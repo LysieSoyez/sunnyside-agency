@@ -1,4 +1,3 @@
-@media  screen and (max-width: 480px) {
     body, HTML{
         margin: 0 auto;
         padding: 0;
@@ -7,13 +6,27 @@
             width: 100%;
             height: 100%;
         }
-        
+        h2{
+            text-align: center;
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 32px;
+            color: #24303E;
+        }
+        p{
+            text-align: center;
+            font-family: 'Barlow', sans-serif;
+            color: #808397;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
         header{
             background-image: url(./images/photos/image-header.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             height: 75vh;
+            width: 100%;
             display: flex;
             color: white;
             flex-direction: column;
@@ -34,7 +47,7 @@
             h1{
                 text-align: center;
                 font-family: 'fraunce', serif;
-                }
+            }
             #menu{
                 width: 6vw;
                 height: 4vh;
@@ -48,53 +61,202 @@
                 margin-top: 5vh;
             }
         }
-            .container{
-                display: flex;
-                flex-direction: column;
-                h2{
-                    font-family: 'barlow', sans-serif;
-                    font-weight: 600px;
+        .container{
+            display: flex;
+            flex-direction: column; 
+            h2{
+                text-align: center;
+                font-family: 'Fraunces', serif;
+                height: 4.875rem;
+                margin: 3.125rem;
+            }
+            
+            a{
+                text-align: center;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                font-size: 0.9375rem;
+                text-transform: uppercase;
+               /* &::after{
+                    display: block;
+                    content: "";
+                    width:135px;
+                    height:10px;
+                    bottom: 0%;
+                    background: #FE7766;
+                    mix-blend-mode: normal;
+                    opacity: 0.25;
+                    border-radius: 28px;
+                }   */ 
+            }
+            p{
+                color: #808397;
+                margin: 3.125rem;
+                
+            }
+            .oeuf{
+                margin-bottom: 10%;
+                .jaune{
+                    a::after{
+                        display: block;
+                        content: "";
+                        width:8.4375rem;
+                        height:0.625rem;
+                        bottom: 0%;
+                        background: #FAD400;
+                        mix-blend-mode: normal;
+                        opacity: 0.25;
+                        border-radius: 1.75rem;
+                        margin: auto;
+                        margin-top: -0.5rem;
+                    }
                 }
             }
-            img{
-                width: 100%;
-                height: 312px;
-                top: 32px;
-                left: 24px;
+            .verre{
+                margin-bottom: 10%;
+                .rose{
+                    a::after{
+                        display: block;
+                        content: "";
+                        width:8.4375rem;
+                        height:0.625rem;
+                        bottom: 0%;
+                        background: #FE7766;
+                        mix-blend-mode: normal;
+                        opacity: 0.25;
+                        border-radius: 1.75rem;
+                        margin: auto;
+                        margin-top: -0.5rem;
+                    }
+                }
             }
-            .graphic{
-                background-image: url(./images/photos/image-graphic-design.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 50vh;
-            }    
-        /*.transform{
-            background-image: url(./images/photos/image-transform.jpg);
+        }
+        img{
+            width: 100%;
+        }
+        .graphic{
+            background-image: url(./images/photos/image-graphic-design.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 50vh;
-        }
-        .stand{
-            background-image: url(./images/photos/image-stand-out.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 50vh;
-        }
-        
-
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;  
+            h2, p{
+                color: #24554A;
+            } 
         }
         .photo{
-            background-image: url(./images/photos/image-gallery-orange.jpg);
+            background-image: url(./images/photos/image-photography.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             height: 50vh;
-            p{
-                margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            h2, p{
+                color: #052C3B;
             }
-        }*/
+        }
+        .client{
+            h2{
+                color: #A7AAAD;
+                font-family: Fraunces 9pt Soft;
+                font-size: 1rem;
+                font-weight: 900;
+                line-height: 1.25rem;
+                letter-spacing: 0.25rem;
+                text-align: center;
+
+            }
+            p{
+                font-size: 0.875rem;
+                font-weight: 600;
+                line-height: 1.5625rem;
+                letter-spacing: -0.0063rem;
+                text-align: center;
+                color: #A7AAAD;
+
+            }
+            .coms{
+                p{
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    line-height: 2rem;
+                    letter-spacing: -0.008rem;
+                    text-align: center;
+                    color: #5B636D;
+                }
+                
+            }
+            .nom{
+                p{
+                    text-align: center;
+                    font-family: 'Fraunces', serif; 
+                    font-weight: 700; 
+                    color: #24303E;
+                }
+                
+            }
+            img{
+                border-radius: 50%;
+            }
+            .emily, .thomas, .jennie{
+                width: 4.5rem;
+                height: 4.5rem;
+                display: flex;
+                align-items: center;
+                margin: auto;
+            }
+        }
+        .images{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            .lait, .orange2, .cone, .sucre{
+                width: 50%;
+                height: 50%;
+                display: flex;
+            }
+        }
+        .about{
+            background-color: #90D4C6;
+            padding-bottom: 5px;
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: 2.0625rem;
+                    width: 10.625rem;
+                    padding: 10%;
+                }
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                margin: 10%;
+                li{
+                    font-family: Barlow;
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    line-height: 1.5625rem;
+                    color: #458D7E;
+                }
+            }
+            .icons{
+                display: flex;
+                justify-content: space-around;
+                margin: 10%;
+                div{
+                    img{
+                        width: 5vw;
+                    }
+                }
+            }
+        }
     }
-}

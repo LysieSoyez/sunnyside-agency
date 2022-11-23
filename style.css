@@ -1,97 +1,242 @@
-@media screen and (max-width: 480px) {
-  body, HTML {
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    /*.transform{
-        background-image: url(./images/photos/image-transform.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-    }
-    .stand{
-        background-image: url(./images/photos/image-stand-out.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-    }
-
-
-    }
-    .photo{
-        background-image: url(./images/photos/image-gallery-orange.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 50vh;
-        p{
-            margin-top: 100px;
-        }
-    }*/
-  }
-  body main, HTML main {
-    width: 100%;
-    height: 100%;
-  }
-  body header, HTML header {
-    background-image: url(./images/photos/image-header.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 75vh;
-    display: flex;
-    color: white;
-    flex-direction: column;
-  }
-  body header .info, HTML header .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4%;
-  }
-  body header .info ul, HTML header .info ul {
-    display: none;
-  }
-  body header .info p, HTML header .info p {
-    font-weight: bolder;
-  }
-  body header h1, HTML header h1 {
-    text-align: center;
-    font-family: "fraunce", serif;
-  }
-  body header #menu, HTML header #menu {
-    width: 6vw;
-    height: 4vh;
-  }
-  body header #fleche, HTML header #fleche {
-    width: 9vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    margin-left: 45vw;
-    margin-top: 5vh;
-  }
-  body .container, HTML .container {
-    display: flex;
-    flex-direction: column;
-  }
-  body .container h2, HTML .container h2 {
-    font-family: "barlow", sans-serif;
-    font-weight: 600px;
-  }
-  body img, HTML img {
-    width: 100%;
-    height: 312px;
-    top: 32px;
-    left: 24px;
-  }
-  body .graphic, HTML .graphic {
-    background-image: url(./images/photos/image-graphic-design.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-  }
+body, HTML {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+body main, HTML main {
+  width: 100%;
+  height: 100%;
+}
+body h2, HTML h2 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 32px;
+  color: #24303E;
+}
+body p, HTML p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: #808397;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+body header, HTML header {
+  background-image: url(./images/photos/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+body header .info, HTML header .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4%;
+}
+body header .info ul, HTML header .info ul {
+  display: none;
+}
+body header .info p, HTML header .info p {
+  font-weight: bolder;
+}
+body header h1, HTML header h1 {
+  text-align: center;
+  font-family: "fraunce", serif;
+}
+body header #menu, HTML header #menu {
+  width: 6vw;
+  height: 4vh;
+}
+body header #fleche, HTML header #fleche {
+  width: 9vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin-left: 45vw;
+  margin-top: 5vh;
+}
+body .container, HTML .container {
+  display: flex;
+  flex-direction: column;
+}
+body .container h2, HTML .container h2 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  height: 4.875rem;
+  margin: 3.125rem;
+}
+body .container a, HTML .container a {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  /* &::after{
+       display: block;
+       content: "";
+       width:135px;
+       height:10px;
+       bottom: 0%;
+       background: #FE7766;
+       mix-blend-mode: normal;
+       opacity: 0.25;
+       border-radius: 28px;
+   }   */
+}
+body .container p, HTML .container p {
+  color: #808397;
+  margin: 3.125rem;
+}
+body .container .oeuf, HTML .container .oeuf {
+  margin-bottom: 10%;
+}
+body .container .oeuf .jaune a::after, HTML .container .oeuf .jaune a::after {
+  display: block;
+  content: "";
+  width: 8.4375rem;
+  height: 0.625rem;
+  bottom: 0%;
+  background: #FAD400;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 1.75rem;
+  margin: auto;
+  margin-top: -0.5rem;
+}
+body .container .verre, HTML .container .verre {
+  margin-bottom: 10%;
+}
+body .container .verre .rose a::after, HTML .container .verre .rose a::after {
+  display: block;
+  content: "";
+  width: 8.4375rem;
+  height: 0.625rem;
+  bottom: 0%;
+  background: #FE7766;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 1.75rem;
+  margin: auto;
+  margin-top: -0.5rem;
+}
+body img, HTML img {
+  width: 100%;
+}
+body .graphic, HTML .graphic {
+  background-image: url(./images/photos/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body .graphic h2, body .graphic p, HTML .graphic h2, HTML .graphic p {
+  color: #24554A;
+}
+body .photo, HTML .photo {
+  background-image: url(./images/photos/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body .photo h2, body .photo p, HTML .photo h2, HTML .photo p {
+  color: #052C3B;
+}
+body .client h2, HTML .client h2 {
+  color: #A7AAAD;
+  font-family: Fraunces 9pt Soft;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.25rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+body .client p, HTML .client p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  letter-spacing: -0.0063rem;
+  text-align: center;
+  color: #A7AAAD;
+}
+body .client .coms p, HTML .client .coms p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: -0.008rem;
+  text-align: center;
+  color: #5B636D;
+}
+body .client .nom p, HTML .client .nom p {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #24303E;
+}
+body .client img, HTML .client img {
+  border-radius: 50%;
+}
+body .client .emily, body .client .thomas, body .client .jennie, HTML .client .emily, HTML .client .thomas, HTML .client .jennie {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+body .images, HTML .images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+body .images .lait, body .images .orange2, body .images .cone, body .images .sucre, HTML .images .lait, HTML .images .orange2, HTML .images .cone, HTML .images .sucre {
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+body .about, HTML .about {
+  background-color: #90D4C6;
+  padding-bottom: 5px;
+}
+body .about .logo, HTML .about .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .about .logo img, HTML .about .logo img {
+  height: 2.0625rem;
+  width: 10.625rem;
+  padding: 10%;
+}
+body .about ul, HTML .about ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 10%;
+}
+body .about ul li, HTML .about ul li {
+  font-family: Barlow;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  color: #458D7E;
+}
+body .about .icons, HTML .about .icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10%;
+}
+body .about .icons div img, HTML .about .icons div img {
+  width: 5vw;
 }/*# sourceMappingURL=style.css.map */
