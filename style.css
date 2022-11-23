@@ -2,6 +2,7 @@ body, HTML {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  /*OEUF + VERRE*/
 }
 body main, HTML main {
   width: 100%;
@@ -41,6 +42,25 @@ body header .info, HTML header .info {
 body header .info ul, HTML header .info ul {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  body header .info ul, HTML header .info ul {
+    display: block;
+    display: flex;
+    list-style: none;
+    font-family: "Fraunces", serif;
+  }
+  body header .info ul li, HTML header .info ul li {
+    margin-left: 2.5rem;
+  }
+  body header .info ul .contact, HTML header .info ul .contact {
+    color: black;
+    background-color: white;
+    border-radius: 28px;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+  }
+}
 body header .info p, HTML header .info p {
   font-weight: bolder;
 }
@@ -51,6 +71,11 @@ body header h1, HTML header h1 {
 body header #menu, HTML header #menu {
   width: 6vw;
   height: 4vh;
+}
+@media screen and (min-width: 1024px) {
+  body header #menu, HTML header #menu {
+    display: none;
+  }
 }
 body header #fleche, HTML header #fleche {
   width: 9vw;
@@ -63,6 +88,7 @@ body header #fleche, HTML header #fleche {
 body .container, HTML .container {
   display: flex;
   flex-direction: column;
+  /*OEUF*/
 }
 body .container h2, HTML .container h2 {
   text-align: center;
@@ -76,17 +102,6 @@ body .container a, HTML .container a {
   font-weight: 900;
   font-size: 0.9375rem;
   text-transform: uppercase;
-  /* &::after{
-       display: block;
-       content: "";
-       width:135px;
-       height:10px;
-       bottom: 0%;
-       background: #FE7766;
-       mix-blend-mode: normal;
-       opacity: 0.25;
-       border-radius: 28px;
-   }   */
 }
 body .container p, HTML .container p {
   color: #808397;
@@ -95,12 +110,29 @@ body .container p, HTML .container p {
 body .container .oeuf, HTML .container .oeuf {
   margin-bottom: 10%;
 }
-body .container .oeuf .jaune a::after, HTML .container .oeuf .jaune a::after {
+@media screen and (min-width: 1024px) {
+  body .container .oeuf, HTML .container .oeuf {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .container .oeuf .oeufImg, HTML .container .oeuf .oeufImg {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+body .container .oeuf .oeufTxt, HTML .container .oeuf .oeufTxt {
+  width: 100%;
+  height: 100%;
+}
+body .container .oeuf .oeufTxt .jaune a::after, HTML .container .oeuf .oeufTxt .jaune a::after {
   display: block;
   content: "";
   width: 8.4375rem;
   height: 0.625rem;
-  bottom: 0%;
   background: #FAD400;
   mix-blend-mode: normal;
   opacity: 0.25;
@@ -111,12 +143,28 @@ body .container .oeuf .jaune a::after, HTML .container .oeuf .jaune a::after {
 body .container .verre, HTML .container .verre {
   margin-bottom: 10%;
 }
-body .container .verre .rose a::after, HTML .container .verre .rose a::after {
+@media screen and (min-width: 1024px) {
+  body .container .verre, HTML .container .verre {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .container .verre .verreImg, HTML .container .verre .verreImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+body .container .verre .verreTxt, HTML .container .verre .verreTxt {
+  width: 100%;
+  height: 100%;
+}
+body .container .verre .verreTxt .rose a::after, HTML .container .verre .verreTxt .rose a::after {
   display: block;
   content: "";
   width: 8.4375rem;
   height: 0.625rem;
-  bottom: 0%;
   background: #FE7766;
   mix-blend-mode: normal;
   opacity: 0.25;
@@ -126,8 +174,14 @@ body .container .verre .rose a::after, HTML .container .verre .rose a::after {
 }
 body img, HTML img {
   width: 100%;
+  height: 100%;
 }
-body .graphic, HTML .graphic {
+@media screen and (min-width: 1024px) {
+  body .orangeCerise, HTML .orangeCerise {
+    display: flex;
+  }
+}
+body .orangeCerise .graphic, HTML .orangeCerise .graphic {
   background-image: url(./images/photos/image-graphic-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -137,10 +191,15 @@ body .graphic, HTML .graphic {
   flex-direction: column;
   justify-content: flex-end;
 }
-body .graphic h2, body .graphic p, HTML .graphic h2, HTML .graphic p {
+@media screen and (min-width: 1024px) {
+  body .orangeCerise .graphic, HTML .orangeCerise .graphic {
+    width: 100%;
+  }
+}
+body .orangeCerise .graphic h2, body .orangeCerise .graphic p, HTML .orangeCerise .graphic h2, HTML .orangeCerise .graphic p {
   color: #24554A;
 }
-body .photo, HTML .photo {
+body .orangeCerise .photo, HTML .orangeCerise .photo {
   background-image: url(./images/photos/image-photography.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -150,7 +209,12 @@ body .photo, HTML .photo {
   flex-direction: column;
   justify-content: flex-end;
 }
-body .photo h2, body .photo p, HTML .photo h2, HTML .photo p {
+@media screen and (min-width: 1024px) {
+  body .orangeCerise .photo, HTML .orangeCerise .photo {
+    width: 100%;
+  }
+}
+body .orangeCerise .photo h2, body .orangeCerise .photo p, HTML .orangeCerise .photo h2, HTML .orangeCerise .photo p {
   color: #052C3B;
 }
 body .client h2, HTML .client h2 {
