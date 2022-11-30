@@ -1,12 +1,10 @@
-
-   body, HTML{
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        main{
-            width: 100%;
-            height: 100%;
-        }
+body, HTML{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    main{
+        width: 100%;
+        height: 100%;
         h2{
             text-align: center;
             font-family: 'Fraunces', serif;
@@ -21,12 +19,15 @@
             font-size: 1.125rem;
             font-weight: 600;
         }
+        a{
+            text-decoration: none;
+        }
         header{
             background-image: url(./images/photos/image-header.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: 75vh;
+            height: 125vw;
             width: 100%;
             display: flex;
             color: white;
@@ -43,16 +44,23 @@
                         display: flex;
                         list-style: none;
                         font-family: 'Fraunces', serif;
+                        a{
+                            color: #ffffff;
+                        }
                         li{
                             margin-left: 2.5rem;
+                            text-transform: uppercase; 
                         }
                         .contact{
-                            color: black;
-                            background-color: white;   
+                            background-color: white;  
+                            text-transform: uppercase; 
                             border-radius: 28px;
                             padding: 1vw;
                             display: flex;
                             align-items: center;
+                            a{
+                                color: #24303E;
+                            }
                         }
                     }
                 }
@@ -66,18 +74,18 @@
             }
             #menu{
                 width: 6vw;
-                height: 4vh;
+                height: 4vw;
                 @media screen and (min-width: 1024px){
                     display: none;
                 }
             }
             #fleche{
-                width: 9vw;
-                height: 20vh;
+                width: 12vw;
+                height: 40vw;
                 display: flex;
                 justify-content: center;
                 margin-left: 45vw;
-                margin-top: 5vh;
+                margin-top: 5vw;
             }
         }
         /*OEUF + VERRE*/
@@ -87,8 +95,7 @@
             h2{
                 text-align: center;
                 font-family: 'Fraunces', serif;
-                height: 4.875rem;
-                margin: 3.125rem;
+                margin: 4vw;
             }
             
             a{
@@ -100,7 +107,7 @@
             }
             p{
                 color: #808397;
-                margin: 3.125rem;
+                margin: 4vw;
             }
             
             /*OEUF*/
@@ -122,6 +129,7 @@
                     width: 100%;
                     height: 100%;
                     @media screen and (min-width: 1024px){
+                        margin: auto;
                         h2, p, a{
                             text-align: left;
                         }
@@ -159,6 +167,7 @@
                     width: 100%;
                     height: 100%; 
                     @media screen and (min-width: 1024px){
+                        margin: auto;
                         h2, p, a{
                             text-align: left;
                         }
@@ -184,47 +193,69 @@
             width: 100%;
             height: 100%;
         }
+        /*ORANGE + CERISE*/
         .orangeCerise{
             @media screen and (min-width: 1024px){
                 display: flex;
             }
+            /*CERISE*/
             .graphic{
                 background-image: url(./images/photos/image-graphic-design.jpg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                height: 50vh;
+                height: 100vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;  
                 @media screen and (min-width: 1024px){
                     width: 100%;
+                    height: 60vw;
                 }
                 h2, p{
                     color: #24554A;
+                    margin: 10vw;
                     @media screen and (min-width: 1024px){
-                        margin-top: -3.125rem;
-                        margin-bottom: 3.125rem;
+                       margin: 2vw;
+                    }
+                }
+                h2{
+                    @media screen and (min-width: 1024px){
+                        margin: 0;
+                    }
+                }
+                p{
+                    @media screen and (min-width: 1024px){
+                        margin: 6.5vw;
                     }
                 } 
             }
+            /*ORANGE*/
             .photo{
                 background-image: url(./images/photos/image-photography.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: 50vh;
+                height: 100vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
                 @media screen and (min-width: 1024px){
                     width: 100%;
+                    height: 60vw;
                 }
                 h2, p{
                     color: #052C3B;
+                    margin: 6vw;
+                }
+                h2{
                     @media screen and (min-width: 1024px){
-                        margin-top: -3.125rem;
-                        margin-bottom: 3.125rem;
+                        margin: 0;
+                    }
+                }
+                p{
+                    @media screen and (min-width: 1024px){
+                        margin: 7vw;
                     }
                 }
             }
@@ -235,8 +266,6 @@
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     grid-template-rows: 1fr;
-                    grid-column-gap: 0px;
-                    grid-row-gap: 0px;
                         
                     .emily { grid-area: 1 / 1 / 2 / 2; }
                     .thomas { grid-area: 1 / 2 / 2 / 3; }
@@ -246,12 +275,14 @@
             }
             h2{
                 color: #A7AAAD;
-                font-family: Fraunces 9pt Soft;
-                font-size: 1rem;
+                font-family: Fraunces, sans-serif;
+                text-transform: uppercase; 
+                font-size: 5vw;
                 font-weight: 900;
                 line-height: 1.25rem;
                 letter-spacing: 0.25rem;
                 text-align: center;
+                margin: 10vw;
                 @media screen and (min-width: 1024px){
                     font-size: xx-large;;
                 }
@@ -322,9 +353,13 @@
                 justify-content: center;
                 align-items: center;
                 img{
-                    height: 8vw;
+                    height: 7vw;
                     width: 30vw;
                     padding: 5vw;
+                    @media screen and (min-width: 1024px){
+                        height: 5vw;
+                        width: 25vw;
+                    }
                 }
             }
             ul{
@@ -342,12 +377,18 @@
                         margin-top: -15vw;
                     }
                 }
-                li{
+                li,a{
                     font-family: Barlow;
                     font-size: 1.125rem;
                     font-weight: 600;
                     line-height: 1.5625rem;
                     color: #458D7E;
+                    &:hover{
+                        color: #ffffff;
+                    }
+                    @media screen and (min-width: 1024px){
+                        padding: 3vw;
+                    }
                 }
             }
             .icons{
@@ -359,7 +400,8 @@
                     display: flex;
                     justify-content: center;
                     img{
-                        margin-right: 5vw;
+                        margin: 1vw;
+                        height: auto;
                     }
                 }
                 div{
@@ -370,3 +412,4 @@
             }
         }
     }
+}

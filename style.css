@@ -2,138 +2,151 @@ body, HTML {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  /*OEUF + VERRE*/
 }
 body main, HTML main {
   width: 100%;
   height: 100%;
+  /*OEUF + VERRE*/
+  /*ORANGE + CERISE*/
 }
-body h2, HTML h2 {
+body main h2, HTML main h2 {
   text-align: center;
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 32px;
   color: #24303E;
 }
-body p, HTML p {
+body main p, HTML main p {
   text-align: center;
   font-family: "Barlow", sans-serif;
   color: #808397;
   font-size: 1.125rem;
   font-weight: 600;
 }
-body header, HTML header {
+body main a, HTML main a {
+  text-decoration: none;
+}
+body main header, HTML main header {
   background-image: url(./images/photos/image-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 125vw;
   width: 100%;
   display: flex;
   color: white;
   flex-direction: column;
 }
-body header .info, HTML header .info {
+body main header .info, HTML main header .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 4%;
 }
-body header .info ul, HTML header .info ul {
+body main header .info ul, HTML main header .info ul {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  body header .info ul, HTML header .info ul {
+  body main header .info ul, HTML main header .info ul {
     display: block;
     display: flex;
     list-style: none;
     font-family: "Fraunces", serif;
   }
-  body header .info ul li, HTML header .info ul li {
-    margin-left: 2.5rem;
+  body main header .info ul a, HTML main header .info ul a {
+    color: #ffffff;
   }
-  body header .info ul .contact, HTML header .info ul .contact {
-    color: black;
+  body main header .info ul li, HTML main header .info ul li {
+    margin-left: 2.5rem;
+    text-transform: uppercase;
+  }
+  body main header .info ul .contact, HTML main header .info ul .contact {
     background-color: white;
+    text-transform: uppercase;
     border-radius: 28px;
     padding: 1vw;
     display: flex;
     align-items: center;
   }
+  body main header .info ul .contact a, HTML main header .info ul .contact a {
+    color: #24303E;
+  }
 }
-body header .info p, HTML header .info p {
+body main header .info p, HTML main header .info p {
   font-weight: bolder;
 }
-body header h1, HTML header h1 {
+body main header h1, HTML main header h1 {
   text-align: center;
   font-family: "fraunce", serif;
 }
-body header #menu, HTML header #menu {
+body main header #menu, HTML main header #menu {
   width: 6vw;
-  height: 4vh;
+  height: 4vw;
 }
 @media screen and (min-width: 1024px) {
-  body header #menu, HTML header #menu {
+  body main header #menu, HTML main header #menu {
     display: none;
   }
 }
-body header #fleche, HTML header #fleche {
-  width: 9vw;
-  height: 20vh;
+body main header #fleche, HTML main header #fleche {
+  width: 12vw;
+  height: 40vw;
   display: flex;
   justify-content: center;
   margin-left: 45vw;
-  margin-top: 5vh;
+  margin-top: 5vw;
 }
-body .container, HTML .container {
+body main .container, HTML main .container {
   display: flex;
   flex-direction: column;
   /*OEUF*/
 }
-body .container h2, HTML .container h2 {
+body main .container h2, HTML main .container h2 {
   text-align: center;
   font-family: "Fraunces", serif;
-  height: 4.875rem;
-  margin: 3.125rem;
+  margin: 4vw;
 }
-body .container a, HTML .container a {
+body main .container a, HTML main .container a {
   text-align: center;
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 0.9375rem;
   text-transform: uppercase;
 }
-body .container p, HTML .container p {
+body main .container p, HTML main .container p {
   color: #808397;
-  margin: 3.125rem;
+  margin: 4vw;
 }
-body .container .oeuf, HTML .container .oeuf {
+body main .container .oeuf, HTML main .container .oeuf {
   margin-bottom: 10%;
 }
 @media screen and (min-width: 1024px) {
-  body .container .oeuf, HTML .container .oeuf {
+  body main .container .oeuf, HTML main .container .oeuf {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: -5px;
   }
 }
 @media screen and (min-width: 1024px) {
-  body .container .oeuf .oeufImg, HTML .container .oeuf .oeufImg {
+  body main .container .oeuf .oeufImg, HTML main .container .oeuf .oeufImg {
     width: 100%;
     height: 100%;
     margin: 0;
   }
 }
-body .container .oeuf .oeufTxt, HTML .container .oeuf .oeufTxt {
+body main .container .oeuf .oeufTxt, HTML main .container .oeuf .oeufTxt {
   width: 100%;
   height: 100%;
 }
 @media screen and (min-width: 1024px) {
-  body .container .oeuf .oeufTxt h2, body .container .oeuf .oeufTxt p, body .container .oeuf .oeufTxt a, HTML .container .oeuf .oeufTxt h2, HTML .container .oeuf .oeufTxt p, HTML .container .oeuf .oeufTxt a {
+  body main .container .oeuf .oeufTxt, HTML main .container .oeuf .oeufTxt {
+    margin: auto;
+  }
+  body main .container .oeuf .oeufTxt h2, body main .container .oeuf .oeufTxt p, body main .container .oeuf .oeufTxt a, HTML main .container .oeuf .oeufTxt h2, HTML main .container .oeuf .oeufTxt p, HTML main .container .oeuf .oeufTxt a {
     text-align: left;
   }
 }
-body .container .oeuf .oeufTxt .jaune a::after, HTML .container .oeuf .oeufTxt .jaune a::after {
+body main .container .oeuf .oeufTxt .jaune a::after, HTML main .container .oeuf .oeufTxt .jaune a::after {
   display: block;
   content: "";
   width: 8.4375rem;
@@ -145,32 +158,35 @@ body .container .oeuf .oeufTxt .jaune a::after, HTML .container .oeuf .oeufTxt .
   margin: auto;
   margin-top: -0.5rem;
 }
-body .container .verre, HTML .container .verre {
+body main .container .verre, HTML main .container .verre {
   margin-bottom: 10%;
 }
 @media screen and (min-width: 1024px) {
-  body .container .verre, HTML .container .verre {
+  body main .container .verre, HTML main .container .verre {
     display: flex;
     flex-direction: row;
     margin-bottom: -5px;
   }
 }
 @media screen and (min-width: 1024px) {
-  body .container .verre .verreImg, HTML .container .verre .verreImg {
+  body main .container .verre .verreImg, HTML main .container .verre .verreImg {
     width: 100%;
     height: 100%;
   }
 }
-body .container .verre .verreTxt, HTML .container .verre .verreTxt {
+body main .container .verre .verreTxt, HTML main .container .verre .verreTxt {
   width: 100%;
   height: 100%;
 }
 @media screen and (min-width: 1024px) {
-  body .container .verre .verreTxt h2, body .container .verre .verreTxt p, body .container .verre .verreTxt a, HTML .container .verre .verreTxt h2, HTML .container .verre .verreTxt p, HTML .container .verre .verreTxt a {
+  body main .container .verre .verreTxt, HTML main .container .verre .verreTxt {
+    margin: auto;
+  }
+  body main .container .verre .verreTxt h2, body main .container .verre .verreTxt p, body main .container .verre .verreTxt a, HTML main .container .verre .verreTxt h2, HTML main .container .verre .verreTxt p, HTML main .container .verre .verreTxt a {
     text-align: left;
   }
 }
-body .container .verre .verreTxt .rose a::after, HTML .container .verre .verreTxt .rose a::after {
+body main .container .verre .verreTxt .rose a::after, HTML main .container .verre .verreTxt .rose a::after {
   display: block;
   content: "";
   width: 8.4375rem;
@@ -182,96 +198,117 @@ body .container .verre .verreTxt .rose a::after, HTML .container .verre .verreTx
   margin: auto;
   margin-top: -0.5rem;
 }
-body img, HTML img {
+body main img, HTML main img {
   width: 100%;
   height: 100%;
 }
+body main .orangeCerise, HTML main .orangeCerise {
+  /*CERISE*/
+  /*ORANGE*/
+}
 @media screen and (min-width: 1024px) {
-  body .orangeCerise, HTML .orangeCerise {
+  body main .orangeCerise, HTML main .orangeCerise {
     display: flex;
   }
 }
-body .orangeCerise .graphic, HTML .orangeCerise .graphic {
+body main .orangeCerise .graphic, HTML main .orangeCerise .graphic {
   background-image: url(./images/photos/image-graphic-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 @media screen and (min-width: 1024px) {
-  body .orangeCerise .graphic, HTML .orangeCerise .graphic {
+  body main .orangeCerise .graphic, HTML main .orangeCerise .graphic {
     width: 100%;
+    height: 60vw;
   }
 }
-body .orangeCerise .graphic h2, body .orangeCerise .graphic p, HTML .orangeCerise .graphic h2, HTML .orangeCerise .graphic p {
+body main .orangeCerise .graphic h2, body main .orangeCerise .graphic p, HTML main .orangeCerise .graphic h2, HTML main .orangeCerise .graphic p {
   color: #24554A;
+  margin: 10vw;
 }
 @media screen and (min-width: 1024px) {
-  body .orangeCerise .graphic h2, body .orangeCerise .graphic p, HTML .orangeCerise .graphic h2, HTML .orangeCerise .graphic p {
-    margin-top: -3.125rem;
-    margin-bottom: 3.125rem;
+  body main .orangeCerise .graphic h2, body main .orangeCerise .graphic p, HTML main .orangeCerise .graphic h2, HTML main .orangeCerise .graphic p {
+    margin: 2vw;
   }
 }
-body .orangeCerise .photo, HTML .orangeCerise .photo {
+@media screen and (min-width: 1024px) {
+  body main .orangeCerise .graphic h2, HTML main .orangeCerise .graphic h2 {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body main .orangeCerise .graphic p, HTML main .orangeCerise .graphic p {
+    margin: 6.5vw;
+  }
+}
+body main .orangeCerise .photo, HTML main .orangeCerise .photo {
   background-image: url(./images/photos/image-photography.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 @media screen and (min-width: 1024px) {
-  body .orangeCerise .photo, HTML .orangeCerise .photo {
+  body main .orangeCerise .photo, HTML main .orangeCerise .photo {
     width: 100%;
+    height: 60vw;
   }
 }
-body .orangeCerise .photo h2, body .orangeCerise .photo p, HTML .orangeCerise .photo h2, HTML .orangeCerise .photo p {
+body main .orangeCerise .photo h2, body main .orangeCerise .photo p, HTML main .orangeCerise .photo h2, HTML main .orangeCerise .photo p {
   color: #052C3B;
+  margin: 6vw;
 }
 @media screen and (min-width: 1024px) {
-  body .orangeCerise .photo h2, body .orangeCerise .photo p, HTML .orangeCerise .photo h2, HTML .orangeCerise .photo p {
-    margin-top: -3.125rem;
-    margin-bottom: 3.125rem;
+  body main .orangeCerise .photo h2, HTML main .orangeCerise .photo h2 {
+    margin: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  body .client .personnes, HTML .client .personnes {
+  body main .orangeCerise .photo p, HTML main .orangeCerise .photo p {
+    margin: 7vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body main .client .personnes, HTML main .client .personnes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
-  body .client .personnes .emily, HTML .client .personnes .emily {
+  body main .client .personnes .emily, HTML main .client .personnes .emily {
     grid-area: 1/1/2/2;
   }
-  body .client .personnes .thomas, HTML .client .personnes .thomas {
+  body main .client .personnes .thomas, HTML main .client .personnes .thomas {
     grid-area: 1/2/2/3;
   }
-  body .client .personnes .jennie, HTML .client .personnes .jennie {
+  body main .client .personnes .jennie, HTML main .client .personnes .jennie {
     grid-area: 1/3/2/4;
   }
 }
-body .client h2, HTML .client h2 {
+body main .client h2, HTML main .client h2 {
   color: #A7AAAD;
-  font-family: Fraunces 9pt Soft;
-  font-size: 1rem;
+  font-family: Fraunces, sans-serif;
+  text-transform: uppercase;
+  font-size: 5vw;
   font-weight: 900;
   line-height: 1.25rem;
   letter-spacing: 0.25rem;
   text-align: center;
+  margin: 10vw;
 }
 @media screen and (min-width: 1024px) {
-  body .client h2, HTML .client h2 {
+  body main .client h2, HTML main .client h2 {
     font-size: xx-large;
   }
 }
-body .client p, HTML .client p {
+body main .client p, HTML main .client p {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5625rem;
@@ -279,7 +316,7 @@ body .client p, HTML .client p {
   text-align: center;
   color: #A7AAAD;
 }
-body .client .coms p, HTML .client .coms p {
+body main .client .coms p, HTML main .client .coms p {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 2rem;
@@ -287,93 +324,108 @@ body .client .coms p, HTML .client .coms p {
   text-align: center;
   color: #5B636D;
 }
-body .client .nom p, HTML .client .nom p {
+body main .client .nom p, HTML main .client .nom p {
   text-align: center;
   font-family: "Fraunces", serif;
   font-weight: 700;
   color: #24303E;
 }
-body .client img, HTML .client img {
+body main .client img, HTML main .client img {
   border-radius: 50%;
 }
-body .client #emily, body .client #thomas, body .client #jennie, HTML .client #emily, HTML .client #thomas, HTML .client #jennie {
+body main .client #emily, body main .client #thomas, body main .client #jennie, HTML main .client #emily, HTML main .client #thomas, HTML main .client #jennie {
   width: 4.5rem;
   height: 4.5rem;
   display: flex;
   align-items: center;
   margin: auto;
 }
-body .images, HTML .images {
+body main .images, HTML main .images {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
 }
 @media screen and (min-width: 1024px) {
-  body .images, HTML .images {
+  body main .images, HTML main .images {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
 }
-body .images .lait, body .images .orange2, body .images .cone, body .images .sucre, HTML .images .lait, HTML .images .orange2, HTML .images .cone, HTML .images .sucre {
+body main .images .lait, body main .images .orange2, body main .images .cone, body main .images .sucre, HTML main .images .lait, HTML main .images .orange2, HTML main .images .cone, HTML main .images .sucre {
   width: 50%;
   height: 50%;
   display: flex;
 }
-body .about, HTML .about {
+body main .about, HTML main .about {
   background-color: #90D4C6;
   padding-bottom: 10vw;
 }
-body .about .logo, HTML .about .logo {
+body main .about .logo, HTML main .about .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .about .logo img, HTML .about .logo img {
-  height: 8vw;
+body main .about .logo img, HTML main .about .logo img {
+  height: 7vw;
   width: 30vw;
   padding: 5vw;
 }
-body .about ul, HTML .about ul {
+@media screen and (min-width: 1024px) {
+  body main .about .logo img, HTML main .about .logo img {
+    height: 5vw;
+    width: 25vw;
+  }
+}
+body main .about ul, HTML main .about ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   margin: 10%;
 }
 @media screen and (min-width: 1024px) {
-  body .about ul, HTML .about ul {
+  body main .about ul, HTML main .about ul {
     display: flex;
     justify-content: center;
     margin-bottom: -12vw;
   }
-  body .about ul li, HTML .about ul li {
+  body main .about ul li, HTML main .about ul li {
     margin-right: 5vw;
     margin-top: -15vw;
   }
 }
-body .about ul li, HTML .about ul li {
+body main .about ul li, body main .about ul a, HTML main .about ul li, HTML main .about ul a {
   font-family: Barlow;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5625rem;
   color: #458D7E;
 }
-body .about .icons, HTML .about .icons {
+body main .about ul li:hover, body main .about ul a:hover, HTML main .about ul li:hover, HTML main .about ul a:hover {
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  body main .about ul li, body main .about ul a, HTML main .about ul li, HTML main .about ul a {
+    padding: 3vw;
+  }
+}
+body main .about .icons, HTML main .about .icons {
   display: flex;
   justify-content: space-around;
   margin: 2vw;
   padding: 2vw;
 }
 @media screen and (min-width: 1024px) {
-  body .about .icons, HTML .about .icons {
+  body main .about .icons, HTML main .about .icons {
     display: flex;
     justify-content: center;
   }
-  body .about .icons img, HTML .about .icons img {
-    margin-right: 5vw;
+  body main .about .icons img, HTML main .about .icons img {
+    margin: 1vw;
+    height: auto;
   }
 }
-body .about .icons div img, HTML .about .icons div img {
+body main .about .icons div img, HTML main .about .icons div img {
   width: 5vw;
 }/*# sourceMappingURL=style.css.map */
